@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:corbelli.leonardo._4i.rubrica"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Rubrica..." Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded"
+        
+        >
+	<Grid>
+		<DataGrid x:Name="dgDati" LoadingRow="daDati_LoadingRow"></DataGrid>
+	</Grid>
 </Window>
