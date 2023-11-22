@@ -81,6 +81,11 @@ namespace corbelli.leonardo._4i.rubrica
                     e.Row.Background = Brushes.Red;
                     e.Row.Foreground = Brushes.Blue;
                 }
+                else if (C.Numero != 0) 
+                {
+                    e.Row.Background = Brushes.Green;
+                    e.Row.Foreground = Brushes.White;
+                }
             }
         }
     }
