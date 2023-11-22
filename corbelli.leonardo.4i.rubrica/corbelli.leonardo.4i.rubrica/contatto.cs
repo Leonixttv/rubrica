@@ -43,16 +43,17 @@ namespace corbelli.leonardo._4i.rubrica
             string[] campi = riga.Split(';');
             if (campi.Length >= 5){
                 int pk = 0;
-                if(int.TryParse(campi[0], out pk))
+                if (int.TryParse(campi[0], out pk))
                 {
+                    
+                    int.TryParse(campi[0], out pk);
                     this.Numero = pk;
                     this.Nome = campi[1];
                     this.Cognome = campi[2];
                     this.Telefono = campi[3];
                     this.Email = campi[4];
 
-                    int pk = 0;
-                    int.TryParse(campi[0])
+                    
                 }
                 else
                 {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\Downloads\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica.csproj": {}
+    "C:\\Users\\leona\\OneDrive\\Documenti\\GitHub\\rubricaWPF\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\Downloads\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica.csproj": {
+    "C:\\Users\\leona\\OneDrive\\Documenti\\GitHub\\rubricaWPF\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\Downloads\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica.csproj",
+        "projectUniqueName": "C:\\Users\\leona\\OneDrive\\Documenti\\GitHub\\rubricaWPF\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica.csproj",
         "projectName": "corbelli.leonardo.4i.rubrica",
-        "projectPath": "C:\\Users\\leona\\Downloads\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica.csproj",
+        "projectPath": "C:\\Users\\leona\\OneDrive\\Documenti\\GitHub\\rubricaWPF\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica.csproj",
         "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\Downloads\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\obj\\",
+        "outputPath": "C:\\Users\\leona\\OneDrive\\Documenti\\GitHub\\rubricaWPF\\corbelli.leonardo.4i.rubrica\\corbelli.leonardo.4i.rubrica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

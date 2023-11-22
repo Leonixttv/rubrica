@@ -30,7 +30,7 @@ namespace corbelli.leonardo._4i.rubrica
         {
             try
             {
-                const MAX 
+                const int MAX = 100;
 
                 Contatto[] Contatti = new Contatto[100];
 
@@ -44,7 +44,7 @@ namespace corbelli.leonardo._4i.rubrica
                 StreamReader fin = new StreamReader("Dati.csv");
                 fin.ReadLine();
 
-                Contatto[] Contatti
+                //Contatto[] Contatti;
 
                 while (!fin.EndOfStream)
                 {
@@ -58,14 +58,9 @@ namespace corbelli.leonardo._4i.rubrica
                         break;
                 }
 
-                for (; idx < Max; idx++)
+                for (; idx < MAX; idx++)
                 {
-                    Contatto c = new Contatto();
-                    c.Numero = idx
-
-
-
-
+                    Contatti[idx] = new Contatto();
                 }
 
                 dgDati.ItemsSource = Contatti;
@@ -81,7 +76,7 @@ namespace corbelli.leonardo._4i.rubrica
         private void daDati_LoadingRow(object sender, DataGridRowEventArgs e)
         {
             Contatto C = e.Row.Item as Contatto;
-            if ()
+            if (C != null)
             {
                 if (C.Numero == 0)
                 {
