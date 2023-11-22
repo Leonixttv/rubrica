@@ -44,8 +44,6 @@ namespace corbelli.leonardo._4i.rubrica
                 StreamReader fin = new StreamReader("Dati.csv");
                 fin.ReadLine();
 
-                //Contatto[] Contatti;
-
                 while (!fin.EndOfStream)
                 {
                     if (idx < MAX)
