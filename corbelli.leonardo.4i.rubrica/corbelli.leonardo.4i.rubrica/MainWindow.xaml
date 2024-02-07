@@ -7,10 +7,20 @@
         mc:Ignorable="d"
         Title="Rubrica..." Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
-        Loaded="Window_Loaded"
-        
-        >
-	<Grid>
-		<DataGrid x:Name="dgDati" LoadingRow="daDati_LoadingRow"></DataGrid>
-	</Grid>
+        Loaded="Window_Loaded">
+
+    <Grid Margin="0,0,0,50">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Contenuto della prima colonna -->
+        <DataGrid x:Name="dgDati" Grid.Column="0" LoadingRow="daDati_LoadingRow"></DataGrid>
+
+        <!-- Contenuto della seconda colonna -->
+        <TextBlock Grid.Column="1" Text="Colonna 2" />
+    </Grid>
+
+
 </Window>

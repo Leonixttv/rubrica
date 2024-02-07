@@ -3,71 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace corbelli.leonardo._4i.rubrica
 {
-    internal class Contatto
+    public enum TipoContatto { nessuno, Email, Telefono, Web, Instagram, celluare }
+
+    public class contatto
     {
-        private int _numero;
-        private string _cognome;
+        public int idPersona { get; set; }
 
-        public int Numero
+        public TipoContatto Tipo { get; set; }
+
+        public string Valore { get; set; }
+
+        public contatto()
         {
-            get
-            {
-                return _numero;
-            }
-
-            set
-            {
-                if (value < 0 || value > 100)
-                    throw new ArgumentOutOfRangeException();
-
-                _numero = value;
-            }
+            Tipo = TipoContatto.nessuno;
         }
 
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public string Telefono { get; set; }
-        public string Citta { get; set; }
-        public string Cap { get; set; }
-
-        public string Cognome { get => _cognome; set => _cognome = value; }
-
-        public Contatto() { }
-
-        public Contatto( string riga)
+        public contatto(string riga)
         {
 
             string[] campi = riga.Split(';');
-            if (campi.Length >= 5){
-                int pk = 0;
-                if (int.TryParse(campi[0], out pk))
-                {
-                    
-                    int.TryParse(campi[0], out pk);
-                    this.Numero = pk;
-                    this.Nome = campi[1];
-                    this.Cognome = campi[2];
-                    this.Telefono = campi[3];
-                    this.Email = campi[4];
 
-                    
-                }
-                else
-                {
-                    throw new ArgumentOutOfRangeException("il campo pk non è un numero!!");
-                }
-            }
-            
-        }
+            int id = 0;
+            int.TryParse(campi[0], out id);
+            idPersona = id;
 
-        public Contatto(int numero, string nome, string cognome)
-        {
-            Numero = numero;
-            Nome = nome;
-            Cognome = cognome;
+            TipoContatto c;
+            Enum.TryParse(campi[1], out c);
+            this.Tipo = campi[1];
+
+            this.Valore = campi[2];
+
+
         }
     }
 }
+

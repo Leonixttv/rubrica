@@ -20,7 +20,6 @@ C:\Users\leona\Downloads\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubri
 C:\Users\leona\Downloads\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\obj\Debug\net6.0-windows\ref\corbelli.leonardo.4i.rubrica.dll
 C:\Users\leona\Downloads\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\Dati.csv
 C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.exe
-C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\Dati.csv
 C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.deps.json
 C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.runtimeconfig.json
 C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.dll
@@ -61,3 +60,5 @@ C:\Users\leona\OneDrive\Desktop\rubricaWPF-main\rubricaWPF-main\corbelli.leonard
 C:\Users\leona\OneDrive\Desktop\rubricaWPF-main\rubricaWPF-main\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\obj\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.pdb
 C:\Users\leona\OneDrive\Desktop\rubricaWPF-main\rubricaWPF-main\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\obj\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.genruntimeconfig.cache
 C:\Users\leona\OneDrive\Desktop\rubricaWPF-main\rubricaWPF-main\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\obj\Debug\net6.0-windows\ref\corbelli.leonardo.4i.rubrica.dll
+C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\obj\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.sourcelink.json
+C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\Contatti.csv

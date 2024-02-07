@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Controls.Ribbon;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -41,7 +42,7 @@ namespace corbelli.leonardo._4i.rubrica
 
                 int idx = 0;
 
-                StreamReader fin = new StreamReader("Dati.csv");
+                StreamReader fin = new StreamReader("Persone.csv");
                 fin.ReadLine();
 
                 while (!fin.EndOfStream)
@@ -87,5 +88,11 @@ namespace corbelli.leonardo._4i.rubrica
                 }
             }
         }
+
+        /*private void dgDati_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Contatto c = e.AddedItems[0] as Contatto;
+            StatusBar.TextInputEvent = $"Contatto selezionato: {c.Nome}";
+        }*/
     }
 }
