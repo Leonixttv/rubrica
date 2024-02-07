@@ -7,19 +7,36 @@
         mc:Ignorable="d"
         Title="Rubrica..." Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
-        Loaded="Window_Loaded">
+        Loaded="Torsani_Window_Loaded">
 
-    <Grid Margin="0,0,0,50">
+    <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400"/>
-            <ColumnDefinition Width="400"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <!-- Contenuto della prima colonna -->
-        <DataGrid x:Name="dgDati" Grid.Column="0" LoadingRow="daDati_LoadingRow"></DataGrid>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button Height="30" Width="90" Margin="5" Content="P1"></Button>
+                <Button Height="30" Width="90" Margin="5" Content="P2"></Button>
+                <Button Height="30" Width="90" Margin="5" Content="P3"></Button>
+                <Button Height="30" Width="90" Margin="5" Content="P4"></Button>
+            </StackPanel>
 
-        <!-- Contenuto della seconda colonna -->
-        <TextBlock Grid.Column="1" Text="Colonna 2" />
+            <DataGrid x:Name = "dgPersone"
+                      Grid.Row="1"
+                      SelectionChanged="dgDati_SelectionChanged">
+            </DataGrid>
+            <TextBlock x:Name="statusbar" Grid.Row="2"></TextBlock>
+        </Grid>
+        <DataGrid x:Name="dgContatti"
+                  Grid.Column="1">
+        </DataGrid>
     </Grid>
 
 

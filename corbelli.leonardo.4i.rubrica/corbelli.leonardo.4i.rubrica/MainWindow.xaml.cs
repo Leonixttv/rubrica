@@ -21,78 +21,65 @@ namespace corbelli.leonardo._4i.rubrica
 {
     public partial class MainWindow : Window
     {
-
+        List<Persona> Persone = new List<Persona>();
+        List<Contatto> Contatti = new List<Contatto>();
         public MainWindow()
         {
             InitializeComponent();
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Torsani_Window_Loaded(object sender, RoutedEventArgs e)
         {
             try
             {
-                const int MAX = 100;
-
-                Contatto[] Contatti = new Contatto[100];
-
-                for (int i = 0; i < Contatti.Length; i++)
-                {
-                    Contatti[i] = new Contatto();
-                }
-
-                int idx = 0;
-
+                //legge le persone
                 StreamReader fin = new StreamReader("Persone.csv");
                 fin.ReadLine();
 
                 while (!fin.EndOfStream)
                 {
-                    if (idx < MAX)
-                    {
-                        string riga = fin.ReadLine();
-                        Contatto c = new Contatto(riga);
-                        Contatti[idx++] = c;
-                    }
-                    else
-                        break;
+                    string riga = fin.ReadLine();
+                    Persona p = new Persona(riga);
+                    Persone.Add(p);
                 }
+                dgPersone.ItemsSource = Persone;
 
-                for (; idx < MAX; idx++)
+                // le righe lette sono idx
+                statusbar.Text = $"Ho letto {Persone.Count} righe";
+
+                StreamReader fino = new StreamReader("Contatti.csv");
+                fino.ReadLine();
+
+                while (!fino.EndOfStream)
                 {
-                    Contatti[idx] = new Contatto();
+                    string riga = fino.ReadLine();
+                    Contatto c = new Contatto(riga);
+                    Contatti.Add(c);
                 }
-
-                dgDati.ItemsSource = Contatti;
-
+                dgContatti.ItemsSource = Contatti;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No no!!\n" + ex.Message);
+                MessageBox.Show(ex.Message);
             }
-
         }
 
-        private void daDati_LoadingRow(object sender, DataGridRowEventArgs e)
+        private void dgDati_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Contatto C = e.Row.Item as Contatto;
-            if (C != null)
+            // "e" è un oggetto con "as" lo trasformiamo nell'oggetto Contatto che spostiamo in "c"
+            Persona p = e.AddedItems[0] as Persona;
+            List<Contatto> contattiFiltrati = new List<Contatto>();
+            if (p != null)
             {
-                if (C.Numero == 0)
+                statusbar.Text = $"Il contatto selezionato: {p.Nome}";
+                foreach (Contatto item in Contatti)
                 {
-                    e.Row.Background = Brushes.Red;
-                    e.Row.Foreground = Brushes.Blue;
-                }
-                else if (C.Telefono[0] == '3')
-                {
-                    e.Row.Background = Brushes.Yellow;
+                    if (item.idPersona == p.idPersona)
+                    {
+                        contattiFiltrati.Add(item);
+                    }
                 }
             }
+            dgContatti.ItemsSource = contattiFiltrati;
         }
-
-        /*private void dgDati_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            Contatto c = e.AddedItems[0] as Contatto;
-            StatusBar.TextInputEvent = $"Contatto selezionato: {c.Nome}";
-        }*/
     }
 }

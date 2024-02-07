@@ -7,37 +7,31 @@ using System.Windows.Media;
 
 namespace corbelli.leonardo._4i.rubrica
 {
-    public enum TipoContatto { nessuno, Email, Telefono, Web, Instagram, celluare }
-
-    public class contatto
+    public enum TipoContatto { nessuno, Email, Telefono, Web, Instagram, FaceBook }
+    internal class Contatto
     {
         public int idPersona { get; set; }
-
         public TipoContatto Tipo { get; set; }
-
         public string Valore { get; set; }
 
-        public contatto()
+        public Contatto()
         {
             Tipo = TipoContatto.nessuno;
         }
-
-        public contatto(string riga)
+        // Costruisce un Contatto, partendo da una riga CSV
+        public Contatto(string riga)
         {
-
             string[] campi = riga.Split(';');
-
+            //tenta di interpretare una stringa, in questo caso tenta di convertire campi[0] in un int (id).
             int id = 0;
             int.TryParse(campi[0], out id);
             idPersona = id;
 
             TipoContatto c;
             Enum.TryParse(campi[1], out c);
-            this.Tipo = campi[1];
+            this.Tipo = c;
 
             this.Valore = campi[2];
-
-
         }
     }
 }
