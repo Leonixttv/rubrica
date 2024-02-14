@@ -6,37 +6,23 @@
         xmlns:local="clr-namespace:corbelli.leonardo._4i.rubrica"
         mc:Ignorable="d"
         Title="Rubrica..." Height="450" Width="800"
-        WindowStartupLocation="CenterScreen"
-        Loaded="Torsani_Window_Loaded">
+        WindowStartupLocation="CenterScreen">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-
-        <Grid Grid.Column="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="40"/>
-                <RowDefinition/>
-                <RowDefinition Height="20"/>
-            </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <Button Height="30" Width="90" Margin="5" Content="P1"></Button>
-                <Button Height="30" Width="90" Margin="5" Content="P2"></Button>
-                <Button Height="30" Width="90" Margin="5" Content="P3"></Button>
-                <Button Height="30" Width="90" Margin="5" Content="P4"></Button>
-            </StackPanel>
-
-            <DataGrid x:Name = "dgPersone"
-                      Grid.Row="1"
-                      SelectionChanged="dgDati_SelectionChanged">
+        <Grid Grid.Row="0" Grid.Column="0">
+            <DataGrid x:Name ="dg" LoadingRow="dg_LoadingRow" SelectionChanged="dg1_LoadingRow">
             </DataGrid>
-            <TextBlock x:Name="statusbar" Grid.Row="2"></TextBlock>
         </Grid>
-        <DataGrid x:Name="dgContatti"
-                  Grid.Column="1">
-        </DataGrid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <DataGrid x:Name="dg1"></DataGrid>
+        </Grid>
     </Grid>
 
 

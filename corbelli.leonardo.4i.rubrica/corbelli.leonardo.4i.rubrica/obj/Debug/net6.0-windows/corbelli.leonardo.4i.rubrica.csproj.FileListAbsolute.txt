@@ -61,4 +61,5 @@ C:\Users\leona\OneDrive\Desktop\rubricaWPF-main\rubricaWPF-main\corbelli.leonard
 C:\Users\leona\OneDrive\Desktop\rubricaWPF-main\rubricaWPF-main\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\obj\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.genruntimeconfig.cache
 C:\Users\leona\OneDrive\Desktop\rubricaWPF-main\rubricaWPF-main\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\obj\Debug\net6.0-windows\ref\corbelli.leonardo.4i.rubrica.dll
 C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\obj\Debug\net6.0-windows\corbelli.leonardo.4i.rubrica.sourcelink.json
-C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\Contatti.csv
+C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\Persona.csv
+C:\Users\leona\OneDrive\Documenti\GitHub\rubricaWPF\corbelli.leonardo.4i.rubrica\corbelli.leonardo.4i.rubrica\bin\Debug\net6.0-windows\dati.csv

@@ -6,25 +6,44 @@ using System.Threading.Tasks;
 
 namespace corbelli.leonardo._4i.rubrica
 {
+    enum Type
+    {
+        Email,
+        Telefono,
+        Nome,
+        Cognome,
+        Web,
+        Instagram,
+        Telegram,
+        Facebook
+    }
     internal class Persona
     {
-        public int idPersona { get; set; }
-        public string Nome { get; set; }
-        public string Cognome { get; set; }
+        private int idPersona;
+        private Type tipo;
+        private string valore;
 
-        public Persona() { }
-        // Costruisce una persona, partendo da una riga CSV
-        public Persona(string riga)
+        public Persona(int idPersona, Type tipo, string valore)
         {
-            string[] campi = riga.Split(';');
-            //tenta di interpretare una stringa, in questo caso tenta di convertire campi[0] in un int (id).
+            this.idPersona = idPersona;
+            this.tipo = tipo;
+            this.valore = valore;
+        }
 
-            int id = 0;
-            int.TryParse(campi[0], out id);
-            idPersona = id;
+        public int IdPersona
+        {
+            get { return idPersona; }
+            set { idPersona = value; }
+        }
 
-            this.Nome = campi[1];
-            this.Cognome = campi[2];
+        public Type Tipo
+        {
+            get { return tipo; }
+        }
+
+        public string Valore
+        {
+            get { return valore; }
         }
     }
 
